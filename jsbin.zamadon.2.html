@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by zsobe31 (http://jsbin.com/zamadon/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="javascript_object">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+function people(name, age) {
+  this.name = name;
+  this.age = age;
+  this.yearsDrive = yearsLeft;
+}
+
+function yearsLeft() {
+  var numYears = 18 - this.age;
+  return numYears;
+}
+
+var dalma = new people("Dalma", 13);
+var aron = new people("Áron", 9);
+
+document.write(aron.yearsDrive());
+</script>
+</body>
+</html>
